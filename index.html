@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>U&amp;I</title>
+	<link rel="stylesheet" href="css/stylish.css">
+	<link type="text/javascript" href="js/script.js">
+</head>
+	<script>
+		function myFunction() {
+			var checkBox = document.getElementById("yes");
+		  	var text = document.getElementById("menu");
+		  	if (checkBox.checked == true){
+				text.style.display = "block";
+		  	} else {
+			 	text.style.display = "none";
+		  	}
+			
+			var checkBox = document.getElementById("no");
+		  	var text = document.getElementById("next");
+		  	if (checkBox.checked == true){
+				text.style.display = "block";
+		  	} else {
+			 	text.style.display = "none";
+		  	}
+			
+			var checkBox = document.getElementById("tilpas");
+		  	var text = document.getElementById("custom");
+		  	if (checkBox.checked == true){
+				text.style.display = "block";
+		  	} else {
+			 	text.style.display = "none";
+		  	}
+		}
+	</script>
+<body>
+	<section>
+		<article>
+			<h1>Catering?</h1>
+			<p>Vælg her</p><input type="checkbox" id="yes"  onclick="myFunction()">
+			<p>Kontakt selv</p><input type="checkbox" id="no"  onclick="myFunction()">
+		</article>
+		<article id="menu" class="slide-in-blurred-bottom">
+			<table>
+				<tr>
+					<td>
+						<h2>Sommer Menu<input type="checkbox"></h2>
+						<p>Forret:</p>
+						<ul>
+							<li>blah</li>
+						</ul>
+
+						<p>Hovedret:</p>
+						<ul>
+							<li>blah</li>
+						</ul>
+
+						<p>Dessert:</p>
+						<ul>
+							<li>blah</li>
+						</ul>
+					</td>
+					<td>
+						<h2>Forårs Menu<input type="checkbox"></h2>
+						<p>Forret:</p>
+						<ul>
+							<li>blah</li>
+						</ul>
+
+						<p>Hovedret:</p>
+						<ul>
+							<li>blah</li>
+						</ul>
+
+						<p>Dessert:</p>
+						<ul>
+							<li>blah</li>
+						</ul>
+					</td>
+					<td>
+						<h2>Tilpas selv menu<input type="checkbox" id="tilpas" onclick="myFunction()"></h2>
+						<figure id="custom" class="slide-in-blurred-bottom">
+							<p>Forret:</p>
+							<ul>
+								<li>blah<input type="checkbox"></li>
+								<li>blah<input type="checkbox"></li>
+								<li>blah<input type="checkbox"></li>
+							</ul>
+
+							<p>Hovedret:</p>
+							<ul>
+								<li>blah<input type="checkbox"></li>
+								<li>blah<input type="checkbox"></li>
+								<li>blah<input type="checkbox"></li>
+							</ul>
+
+							<p>Dessert:</p>
+							<ul>
+								<li>blah<input type="checkbox"></li>
+								<li>blah<input type="checkbox"></li>
+								<li>blah<input type="checkbox"></li>
+							</ul>
+						</figure>
+					</td>
+				</tr>
+			</table>				
+		</article>
+		<button id="next" class="slide-in-blurred-bottom">NÆSTE</button>
+	</section>
+	
+</body>
+</html>
