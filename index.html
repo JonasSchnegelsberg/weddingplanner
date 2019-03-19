@@ -5,6 +5,7 @@
 	<title>U&amp;I</title>
 	<link rel="stylesheet" href="css/stylish.css">
 	<link type="text/javascript" href="js/script.js">
+	<link rel="stylesheet" href="css/breakpoints.css">
 </head>
 	<script>
 		function myFunction() {
@@ -34,78 +35,54 @@
 		}
 	</script>
 <body>
-	<section>
-		<article>
-			<h1>Catering?</h1>
-			<p>Vælg her</p><input type="checkbox" id="yes"  onclick="myFunction()">
+	<section class="grid-container">
+		<h1 class="grid-item item0">Catering</h1>
+		<article class="grid-item item1">
+			<p>Vælg her</p><input type="checkbox" id="yes" onclick="myFunction()">
+		</article>
+		<article class="grid-item item2">
 			<p>Kontakt selv</p><input type="checkbox" id="no"  onclick="myFunction()">
 		</article>
-		<article id="menu" class="slide-in-blurred-bottom">
-			<table>
-				<tr>
-					<td>
-						<h2>Sommer Menu<input type="checkbox"></h2>
+		<article class="grid-container2" id="menu">
+			<figure class="grid-item item5">
+				<h2>Sommer Menu<input type="checkbox"></h2>
+				<p>Forret:</p>
+					<li>blah</li>
+				<p>Hovedret:</p>
+					<li>blah</li>
+				<p>Dessert:</p>
+					<li>blah</li>
+			</figure>
+			<figure class="grid-item item6">
+				<h2>Forårs Menu<input type="checkbox"></h2>
+				<p>Forret:</p>
+					<li>blah</li>
+				<p>Hovedret:</p>
+					<li>blah</li>
+				<p>Dessert:</p>
+					<li>blah</li>
+			</figure>
+			<figure class="grid-item item7">
+				<h2>Tilpas selv menu<input type="checkbox" id="tilpas" onclick="myFunction()"></h2>
+					<figure id="custom">
 						<p>Forret:</p>
-						<ul>
-							<li>blah</li>
-						</ul>
-
+							<li>blah<input type="checkbox"></li>
+							<li>blah<input type="checkbox"></li>
+							<li>blah<input type="checkbox"></li>
 						<p>Hovedret:</p>
-						<ul>
-							<li>blah</li>
-						</ul>
-
+							<li>blah<input type="checkbox"></li>
+							<li>blah<input type="checkbox"></li>
+							<li>blah<input type="checkbox"></li>
 						<p>Dessert:</p>
-						<ul>
-							<li>blah</li>
-						</ul>
-					</td>
-					<td>
-						<h2>Forårs Menu<input type="checkbox"></h2>
-						<p>Forret:</p>
-						<ul>
-							<li>blah</li>
-						</ul>
-
-						<p>Hovedret:</p>
-						<ul>
-							<li>blah</li>
-						</ul>
-
-						<p>Dessert:</p>
-						<ul>
-							<li>blah</li>
-						</ul>
-					</td>
-					<td>
-						<h2>Tilpas selv menu<input type="checkbox" id="tilpas" onclick="myFunction()"></h2>
-						<figure id="custom" class="slide-in-blurred-bottom">
-							<p>Forret:</p>
-							<ul>
-								<li>blah<input type="checkbox"></li>
-								<li>blah<input type="checkbox"></li>
-								<li>blah<input type="checkbox"></li>
-							</ul>
-
-							<p>Hovedret:</p>
-							<ul>
-								<li>blah<input type="checkbox"></li>
-								<li>blah<input type="checkbox"></li>
-								<li>blah<input type="checkbox"></li>
-							</ul>
-
-							<p>Dessert:</p>
-							<ul>
-								<li>blah<input type="checkbox"></li>
-								<li>blah<input type="checkbox"></li>
-								<li>blah<input type="checkbox"></li>
-							</ul>
-						</figure>
-					</td>
-				</tr>
-			</table>				
+							<li>blah<input type="checkbox"></li>
+							<li>blah<input type="checkbox"></li>
+							<li>blah<input type="checkbox"></li>
+					</figure>
+			</figure>	
 		</article>
-		<button id="next" class="slide-in-blurred-bottom">NÆSTE</button>
+		<article class="grid-item item3">
+			<button id="next" href="#" class="slide-in-blurred-bottom">NÆSTE</button>
+		</article>
 	</section>
 	
 </body>
