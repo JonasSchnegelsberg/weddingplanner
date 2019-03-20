@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>U&amp;I - Catering</title>
+	<title>U&amp;I - Lokation</title>
 	<link rel="stylesheet" href="css/stylish.css">
 	<link type="text/javascript" href="js/script.js">
 	<link rel="stylesheet" href="css/breakpoints.css">
@@ -11,7 +11,7 @@
 	<script>
 		function myFunction() {
 			var checkBox = document.getElementById("yes");
-		  	var text = document.getElementById("menu");
+		  	var text = document.getElementById("comment");
 		  	if (checkBox.checked == true){
 				text.style.display = "block";
 		  	} else {
@@ -38,10 +38,10 @@
 <body>
 	<header>
 		<nav class="icon-bar">
-			<a class="arrow" href="lokation.html"><i class="fa fa-arrow-left"></i></a>
+			<a class="arrow" href="guest.html"><i class="fa fa-arrow-left"></i></a>
 		  	<a class="passed" href="guest.html"><i class="fa fa-address-book-o"></i></a>
-		  	<a class="passed" href="lokation.html"><i class="fa fa-map-marker"></i></a> 
-		  	<a class="active" href="index.html"><i class="fa fa-cutlery"></i></a> 
+		  	<a class="active" href="lokation.html"><i class="fa fa-map-marker"></i></a> 
+		  	<a href="index.html"><i class="fa fa-cutlery"></i></a> 
 		  	<a href="konditor.html"><i class="fa fa-birthday-cake"></i></a>
 		  	<a href="florist.html"><i class="fa fa-pagelines"></i></a>
 		  	<a href="fotograf.html"><i class="fa fa-camera"></i></a>
@@ -49,58 +49,25 @@
 		  	<a href="underholdning.html"><i class="fa fa-music"></i></a>
 		  	<a href="security.html"><i class="fa fa-user-secret"></i></a>
 		  	<a href="oversigt.html"><i class="fa fa-shopping-cart"></i></a>
-		  	<a class="arrow" href="konditor.html"><i class="fa fa-arrow-right"></i></a>
+		  	<a class="arrow" href="index.html"><i class="fa fa-arrow-right"></i></a>
 		</nav>
 	</header>
 	<main>
 		<section class="grid-container">
-		<h1 class="grid-item item0">Catering</h1>
+		<h1 class="grid-item item0">Lokation</h1>
 		<article class="grid-item item1">
 			<p>Vælg her</p><input type="checkbox" id="yes" onclick="myFunction()">
 		</article>
 		<article class="grid-item item2">
-			<p>Kontakt selv</p><input type="checkbox" id="no" onclick="myFunction()">
+			<p>Kontakt selv</p><input type="checkbox" id="no"  onclick="myFunction()">
 		</article>
-		<article class="grid-container2" id="menu">
-			<figure class="grid-item item5">
-				<h2>Sommer Menu<input type="checkbox"></h2>
-				<p>Forret:</p>
-					<li>blah</li>
-				<p>Hovedret:</p>
-					<li>blah</li>
-				<p>Dessert:</p>
-					<li>blah</li>
-			</figure>
-			<figure class="grid-item item6">
-				<h2>Forårs Menu<input type="checkbox"></h2>
-				<p>Forret:</p>
-					<li>blah</li>
-				<p>Hovedret:</p>
-					<li>blah</li>
-				<p>Dessert:</p>
-					<li>blah</li>
-			</figure>
-			<figure class="grid-item item7">
-				<h2>Tilpas selv menu<input type="checkbox" id="tilpas" onclick="myFunction()"></h2>
-					<figure id="custom">
-						<p>Forret:</p>
-							<li>blah<input type="checkbox"></li>
-							<li>blah<input type="checkbox"></li>
-							<li>blah<input type="checkbox"></li>
-						<p>Hovedret:</p>
-							<li>blah<input type="checkbox"></li>
-							<li>blah<input type="checkbox"></li>
-							<li>blah<input type="checkbox"></li>
-						<p>Dessert:</p>
-							<li>blah<input type="checkbox"></li>
-							<li>blah<input type="checkbox"></li>
-							<li>blah<input type="checkbox"></li>
-					</figure>
-			</figure>	
+		<article class="grid-item item4">
+			<textarea rows="4" cols="50" name="comment" form="userform" id="comment">Søg her...</textarea>
 		</article>
 		<article class="grid-item item3">
 			<a href="konditor.html" id="next">NÆSTE</a>
 		</article>
+			
 	</section>
 	</main>
 

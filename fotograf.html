@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>U&amp;I - Fotograf</title>
+	<link rel="stylesheet" href="css/stylish.css">
+	<link type="text/javascript" href="js/script.js">
+	<link rel="stylesheet" href="css/breakpoints.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+	<script>
+		function myFunction() {
+			var checkBox = document.getElementById("yes");
+		  	var text = document.getElementById("comment");
+		  	if (checkBox.checked == true){
+				text.style.display = "block";
+		  	} else {
+			 	text.style.display = "none";
+		  	}
+			
+			var checkBox = document.getElementById("no");
+		  	var text = document.getElementById("next");
+		  	if (checkBox.checked == true){
+				text.style.display = "block";
+		  	} else {
+			 	text.style.display = "none";
+		  	}
+			
+			var checkBox = document.getElementById("tilpas");
+		  	var text = document.getElementById("custom");
+		  	if (checkBox.checked == true){
+				text.style.display = "block";
+		  	} else {
+			 	text.style.display = "none";
+		  	}
+		}
+	</script>
+<body>
+	<header>
+		<nav class="icon-bar">
+			<a class="arrow" href="florist.html"><i class="fa fa-arrow-left"></i></a>
+		  	<a class="passed" href="index.html"><i class="fa fa-address-book-o"></i></a>
+		  	<a class="passed" href="lokation.html"><i class="fa fa-map-marker"></i></a> 
+		  	<a class="passed" href="index.html"><i class="fa fa-cutlery"></i></a> 
+		  	<a class="passed" href="konditor.html"><i class="fa fa-birthday-cake"></i></a>
+		  	<a class="passed" href="florist.html"><i class="fa fa-pagelines"></i></a>
+		  	<a class="active" href="fotograf.html"><i class="fa fa-camera"></i></a>
+		  	<a href="bartender.html"><i class="fa fa-glass"></i></a>
+		  	<a href="underholdning.html"><i class="fa fa-music"></i></a>
+		  	<a href="security.html"><i class="fa fa-user-secret"></i></a>
+		  	<a href="oversigt.html"><i class="fa fa-shopping-cart"></i></a>
+		  	<a class="arrow" href="bartender.html"><i class="fa fa-arrow-right"></i></a>
+		</nav>
+	</header>
+	<main>
+		<section class="grid-container">
+			<h1 class="grid-item item0">Fotograf</h1>
+			<article class="grid-item item1">
+				<p>Vælg her</p><input type="checkbox" id="yes" onclick="myFunction()">
+			</article>
+			<article class="grid-item item2">
+				<p>Kontakt selv</p><input type="checkbox" id="no"  onclick="myFunction()">
+			</article>
+			<article class="grid-item item4">
+				<textarea rows="4" cols="50" name="comment" form="usrform" id="comment">Kommentar...</textarea>
+			</article>
+			
+			<article class="grid-item item3">
+				<a href="index2.html" id="next">NÆSTE</a>
+			</article>
+		</section>		
+	</main>
+
+</body>
+</html>

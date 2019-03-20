@@ -2,7 +2,7 @@
 
 @media only screen and (min-width: 600px) {
 	body {
-		width: 800px;
+		width: 1200px;
 		margin: 0 auto;
 	}
 
@@ -54,10 +54,27 @@
 		grid-row: 2;
 	}
 
+	.icon-bar {
+		width: 100%;
+		background-color: #555;
+		overflow: auto;
+	}
 
+	.icon-bar a {
+		float: left;
+		width: 100px;
+		text-align: center;
+		padding: 12px 0;
+		transition: all 0.3s ease;
+		color: #333;
+		font-size: 20px;
+	}
 
-	.slide-in-blurred-bottom {
-		-webkit-animation: slide-in-blurred-bottom 0.5s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
-				animation: slide-in-blurred-bottom 0.5s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+	.icon-bar a:hover {
+		background-color: #000;
+	}
+
+	.active {
+		background-color: #4CAF50;
 	}
 } 
